@@ -1,0 +1,24 @@
+.nav-pills .nav-link {
+  color: #000000;
+  height: 24px; 
+  line-height: 24px;    /* Vertically center text */
+  padding-top: 0;       /* Remove extra padding */
+  padding-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000000 !important;
+  color: #fff !important;
+  border-radius: 30px;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  background-color: #e0e0e0;
+  color: #000000;
+  border-radius: 30px;
+}
+
+
+
+
