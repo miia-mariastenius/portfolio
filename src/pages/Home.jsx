@@ -1,4 +1,5 @@
 import portrait from "../images/20230920_105540.jpg"
+import { FaCode, FaFigma, FaGlobe } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -13,15 +14,34 @@ function Home() {
             </section>
           </div>
           <div className="col col-lg-4">
-            <img src={portrait} alt="Portrait of Miia-Maria Stenius" className="portrait-img"/>
+            <img src={portrait} alt="Portrait of Miia-Maria Stenius" className="portrait-img" />
           </div>
         </div>
       </div>
-      <div>
-        <div className="secondary-container">
-          <section>
-            <h2>SKILLS AND EXPERTISE</h2>
-          </section>
+      <div className="secondary-container">
+        <div className="contents">
+          <div className=" row">
+            <section>
+              <h2>SKILLS AND EXPERTISE</h2>
+              <div className="skills-grid">
+                <div className="skill">
+                  <h3 aria-label="Development">
+                    <FaCode aria-hidden="true" />
+                  </h3>
+                </div>
+                <div className="skill">
+                  <h3 aria-label="Design">
+                    <FaFigma aria-hidden="true" />
+                  </h3>
+                </div>
+                <div className="skill">
+                  <h3 aria-label="Languages">
+                    <FaGlobe aria-hidden="true" />
+                  </h3>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </>

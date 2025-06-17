@@ -10,10 +10,13 @@ html {
 .nav-pills .nav-link {
   color: #000000;
   height: 24px; 
-  line-height: 24px;    /* Vertically center text */
-  padding-top: 0;       /* Remove extra padding */
+  line-height: 20px;
+  padding-top: 0;
   padding-bottom: 0;
   font-size: 0.95rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-pills .nav-link.active {
@@ -27,6 +30,7 @@ html {
   color: #000000;
   border-radius: 30px;
 }
+
  .header-container {
   background-color: #E4EDF6;
  }
@@ -54,34 +58,38 @@ html {
  }
 
  .secondary-container{
-  background-color: FAFAFA;
+  background-color: #FAFAFA;
  }
 
 
 
 @media only screen and (max-width: 600px) {
   .contents{
-  margin: 0px 10px;
+  margin: 0px 10px !important;
+  }
+
+  .nav-pills .nav-link {
+  padding: 0.25rem 0.4rem;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .contents{
-  margin: 0px 20px;
+  margin: 0px 20px !important;
   }
 }
 
 
 @media only screen and (min-width: 768px) {
   .contents{
-  margin: 0px 50px;
+  margin: 0px 50px !important;
   }
 }
 
 
 @media only screen and (min-width: 992px) {
   .contents{
-  margin: 0px 100px;
+  margin: 0px 100px !important;
   }
 }
 
@@ -93,11 +101,6 @@ html {
 @media only screen and (min-width: 1200px) {
   .contents{
     margin: 0px 230px !important; 
-    padding: 70px 0px;
-  }
-
-  .secondary-container{
-    margin: 0px 230px;
     padding: 70px 0px;
   }
 }
