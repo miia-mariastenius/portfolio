@@ -1,3 +1,12 @@
+body {
+  font-family: 'Inter', sans-serif !important;
+  color: #000 !important;
+}
+
+html {
+  font-size: 1rem;
+}
+
 .nav-pills .nav-link {
   color: #000000;
   height: 24px; 
@@ -18,7 +27,77 @@
   color: #000000;
   border-radius: 30px;
 }
+ .header-container {
+  background-color: #E4EDF6;
+ }
+
+ h1 {
+  padding-bottom: 50px;
+  font-weight: 600 !important;
+ }
+
+ h2 {
+  padding-bottom: 5px;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+ }
+
+ p {
+  margin-bottom: 0px !important;
+ }
+
+ .portrait-img{
+  /* width: 100%; */
+  height: auto;
+  max-width: 340px;
+  border-radius: 200px;
+ }
+
+ .secondary-container{
+  background-color: FAFAFA;
+ }
 
 
 
+@media only screen and (max-width: 600px) {
+  .contents{
+  margin: 0px 10px;
+  }
+}
 
+@media only screen and (min-width: 600px) {
+  .contents{
+  margin: 0px 20px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .contents{
+  margin: 0px 50px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .contents{
+  margin: 0px 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .contents{
+    margin: 0px 230px !important; 
+    padding: 70px 0px;
+  }
+
+  .secondary-container{
+    margin: 0px 230px;
+    padding: 70px 0px;
+  }
+}
