@@ -41,13 +41,24 @@ html {
  }
 
  h2 {
-  padding-bottom: 5px;
+  padding-bottom: 5px !important;
   font-size: 24px !important;
   font-weight: 600 !important;
  }
 
  p {
   margin-bottom: 0px !important;
+ }
+
+ .btn{
+  background-color: #F8F176 !important;
+  color: #000000 !important;
+  border-radius: 30px !important;
+  border: none !important;
+  padding: 0.9rem 1rem !important;
+  margin: 30px 0px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
  }
 
  .portrait-img{
@@ -61,6 +72,23 @@ html {
   background-color: #FAFAFA;
  }
 
+ section{
+  padding: 0px !important;
+ }
+
+ .skill-container{
+  background-color: #000000;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 20px;
+ }
+
+ .skill{
+  justify-content: center;
+  align-items: center;
+ }
 
 
 @media only screen and (max-width: 600px) {

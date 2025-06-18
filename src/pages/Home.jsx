@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import portrait from "../images/20230920_105540.jpg"
 import { FaCode, FaFigma, FaGlobe } from 'react-icons/fa';
 
@@ -23,23 +24,29 @@ function Home() {
           <div className=" row">
             <section>
               <h2>SKILLS AND EXPERTISE</h2>
-              <div className="skills-grid">
-                <div className="skill">
-                  <h3 aria-label="Development">
-                    <FaCode aria-hidden="true" />
+              <div className="skills-grid row pt-2">
+                <div className="skill col">
+                  <h3 aria-label="Development" className="skill-container">
+                    <FaCode size={42} color="white" aria-hidden="true" />
                   </h3>
+                  <p>I enjoy building clean, functional websites with HTML, CSS, and JavaScript. I also have knowledge in React and React Native, as well as WordPress development. I'm focused on writing accessible, responsive code that works for everyone.</p>
                 </div>
-                <div className="skill">
-                  <h3 aria-label="Design">
-                    <FaFigma aria-hidden="true" />
+                <div className="skill col">
+                  <h3 aria-label="Design" className="skill-container">
+                    <FaFigma size={42} color="white" aria-hidden="true" />
                   </h3>
+                  <p>I use Figma to design and plan layouts before development. It helps me visualize and iterate ideas efficiently. Other image editing software I’ve used are Adobe Photoshop and Illustrator.</p>
                 </div>
-                <div className="skill">
-                  <h3 aria-label="Languages">
-                    <FaGlobe aria-hidden="true" />
+                <div className="skill col">
+                  <h3 aria-label="Languages" className="skill-container">
+                    <FaGlobe size={42} color="white" aria-hidden="true" />
                   </h3>
+                  <p>Finnish is my native language, and I’m fluent in English. I’m also learning Japanese and really enjoy practicing it at an intermediate level. I appreciate how language connects people. I've also studied Swedish and German in school, which gave me a broader perspective.</p>
                 </div>
               </div>
+              <Link to="/projects" className="btn">
+                CHECK MY PROJECTS
+              </Link>
             </section>
           </div>
         </div>
