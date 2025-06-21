@@ -97,6 +97,20 @@ p {
   align-items: center;
 }
 
+.project1-img{
+   /* width: 100%; */
+  height: auto;
+  max-width: 500px;
+  border-radius: 14px;
+}
+
+.project2-img{
+   /* width: 100%; */
+  height: auto;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
 
 @media only screen and (max-width: 374px) {
   .portrait-img {
