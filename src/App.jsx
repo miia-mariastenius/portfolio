@@ -1,7 +1,7 @@
 import './css/App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navibar from './components/Navibar';
-import Home from './pages/home';
+import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import AccessibilityStatement from './pages/AccessibilityStatement';
@@ -22,6 +22,9 @@ function App() {
           <Route path="/accessibility-stetament" element={<AccessibilityStatement />} />
         </Routes>
       </main>
+      <footer className="footer">
+        <p>© 2025 Miia-Maria Stenius</p>
+      </footer>
     </>
   )
 }
