@@ -18,7 +18,7 @@ function Home() {
 
               <section className="mt-0">
                 <h2>PROFESSIONAL BACKGROUND</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in semper ex. Praesent sollicitudin mollis diam, at porttitor urna auctor id. Nulla aliquet luctus lacus, at pharetra sem. In diam neque, dictum et viverra a, rhoncus euismod velit. Mauris faucibus leo nec leo tincidunt, eu lobortis nisl faucibus. Donec vitae hendrerit ante. Ut sit amet quam non dolor cursus auctor. Sed iaculis risus non blandit aliquam. In ut dignissim sem.</p>
+                <p>I'm a business information systems student passionate about creating user-friendly digital experiences. Although my background is in tourism, where I developed strong communication and problem-solving skills, I'm now focused on web development and design. I'm currently building my portfolio and honing my skills in coding, Figma, and multimedia editing.</p>
               </section>
             </div>
 
