@@ -9,35 +9,47 @@ function Contact() {
         </div>
       </div>
       <div className="secondary-container">
-        <div className="contents">
-          <h2>CONTACT FORM</h2>
-          <div>
-            <form>
-              <label for="name">Name <span aria-hidden="true">Required</span></label><br/>
-              <input type="text" id="name" name="name" required placeholder="John Doe" /><br/>
-              <label for="email">Email <span aria-hidden="true">Required</span></label><br/>
-              <input type="text" id="email" name="email" required placeholder="johndoe@example.com" /><br/>
-              <label for="phone">Phone number</label><br/>
-              <input type="tel" id="phone" name="phone" required placeholder="123 456 7890" /><br/>
-              <fieldset>
-                <legend>Preferred contact method</legend>
-                <div>
-                  <input type="radio" id="no-preference" name="contact-method" checked value="no-preference" required/>
-                  <label for="no-preference">No preference</label>
+        <div className="contents ">
+          <div className="form-padding">
+            <h2>CONTACT FORM</h2>
+            <div >
+              <form>
+                <div className="form-group">
+                  <label htmlFor="name">Name <span className="form-required" aria-hidden="true">Required</span></label><br />
+                  <input type="text" id="name" name="name" required placeholder="John Doe" /><br />
                 </div>
-                <div>
-                  <input type="radio" id="email-contact" name="contact-method" value="email"/>
-                  <label for="email-contact">Email</label>
+                <div className="form-group">
+                  <label htmlFor="email">Email <span className="form-required" aria-hidden="true">Required</span></label><br />
+                  <input type="text" id="email" name="email" required placeholder="johndoe@example.com" /><br />
                 </div>
-                <div>
-                  <input type="radio" id="phone-contact" name="contact-method" value="phone" />
-                  <label for="phone-contact">Phone</label>
+                <div className="form-group">
+                  <label htmlFor="phone">Phone number</label><br />
+                  <input type="tel" id="phone" name="phone" required placeholder="123 456 7890" /><br />
                 </div>
-              </fieldset>
-              <label for="message">Message <span aria-hidden="true">Required</span></label><br/>
-              <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea><br/>
-              <button type="submit">SEND MESSAGE</button>
-            </form>
+                <div className="form-group">
+                  <fieldset>
+                    <legend>Preferred contact method <span className="form-required" aria-hidden="true">Required</span></legend>
+                    <div>
+                      <input type="radio" id="no-preference" name="contact-method" value="no-preference" required className="form-check-input" />
+                      <label htmlFor="no-preference">No preference</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="email-contact" name="contact-method" value="email" className="form-check-input" />
+                      <label htmlFor="email-contact">Email</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="phone-contact" name="contact-method" value="phone" className="form-check-input" />
+                      <label htmlFor="phone-contact">Phone</label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message <span className="form-required" aria-hidden="true">Required</span></label><br />
+                  <textarea id="message" name="message" required placeholder="Your message here..."></textarea><br />
+                  <button type="submit" className="btn">SEND MESSAGE</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

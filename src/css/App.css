@@ -126,6 +126,46 @@ p {
   max-width: 280px;
 }
 
+.form-group {
+  margin-bottom: 18px;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+.form-required{
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+input{
+  width: 100%;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+}
+
+legend{
+  font-size: 1rem !important;
+}
+
 @media only screen and (max-width: 374px) {
   .portrait-img {
     width: 100%;
@@ -182,6 +222,10 @@ p {
     margin: 0px 150px !important;
     padding: 70px 0px;
   }
+
+  .form-padding{
+  padding: 0px 80px;
+}
 }
 
 @media only screen and (min-width: 1400px) {
