@@ -1,4 +1,5 @@
 import './css/App.css';
+import ScrollToTop from './components/ScrollToTop';
 import { Routes, Route } from 'react-router-dom';
 import Navibar from './components/Navibar';
 import Home from './pages/Home';
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+    <ScrollToTop />
       <header>
         <Navibar />
       </header>
