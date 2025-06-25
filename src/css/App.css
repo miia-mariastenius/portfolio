@@ -73,6 +73,14 @@ p {
   font-weight: 600 !important;
 }
 
+.btn:focus, .btn:focus-visible {
+  outline: 2px solid rgb(0, 0, 0) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px #eafaf1 !important;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
 .portrait-img {
   /* width: 100%; */
   height: auto;
