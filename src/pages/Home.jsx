@@ -80,7 +80,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-center text-md-start">
+              <div className="text-center text-md-start home-btn">
                 <Link to="/projects" className="btn" aria-label="Projects">
                   CHECK MY PROJECTS
                 </Link>
