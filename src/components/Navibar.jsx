@@ -1,23 +1,22 @@
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { LinkContainer } from "react-router-bootstrap";
 
 function Navibar() {
 
   return (
-    <Nav variant="pills" className="m-auto my-3 justify-content-center">
+    <Nav variant="pills" className="m-auto my-2 justify-content-center gap-2">
       <Nav.Link as={NavLink} to="/" end>
         HOME
       </Nav.Link>
-      <LinkContainer to="/projects">
-        <Nav.Link>PROJECTS</Nav.Link>
-      </LinkContainer>
-      <LinkContainer to="/contact">
-        <Nav.Link>CONTACT</Nav.Link>
-      </LinkContainer>
-      <LinkContainer to="/accessibility-stetament">
-        <Nav.Link>ACCESSIBILITY<br /> STATEMENT</Nav.Link>
-      </LinkContainer>
+      <Nav.Link as={NavLink} to="/projects">
+        PROJECTS
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/contact">
+        CONTACT
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/accessibility-stetament">
+        ACCESSIBILITY<br />STATEMENT
+      </Nav.Link>
     </Nav>
   )
 }

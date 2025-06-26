@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
-    <>
+    <div className="app-root">
     <ScrollToTop />
       <header>
         <Navibar />
@@ -27,7 +27,7 @@ function App() {
       <footer className="footer">
         <p>© 2025 Miia-Maria Stenius</p>
       </footer>
-    </>
+    </div>
   )
 }
 
