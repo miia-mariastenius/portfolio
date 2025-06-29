@@ -57,7 +57,7 @@ function Contact() {
       <div className="header-container">
         <div className="contents">
           <h1>CONTACT ME</h1>
-          <p>If you’d like to get in touch, have questions, or just want to say hello, feel free to use the form below. I’ll get back to you as soon as I can.</p>
+          <p>If you'd like to get in touch, have questions, or just want to say hello, feel free to use the form below. I'll get back to you as soon as I can.</p>
         </div>
       </div>
       <div className="secondary-container">

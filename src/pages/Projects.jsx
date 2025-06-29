@@ -17,7 +17,7 @@ function Projects() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="mb-2 d-flex align-items-end gap-2">
-                    <img src={projecticon1} alt="" aria-hidden="true" />
+                    <img src={projecticon1} alt="" aria-hidden="true"/>
                     <h2 id="project1-title">HOPE TAILS RESCUE</h2>
                   </div>
                   <p className="project-description">A responsive web platform built with a team of 3 for pet lovers to browse and adopt rescue animals. Users can view pet profiles, read stories, and contact the shelter directly.</p>
@@ -29,7 +29,7 @@ function Projects() {
                     <li>Collaborative team project (3 members)</li>
                   </ul>
                   <h3>MY ROLE</h3>
-                  <p>I was responsible for 5 of the 11 pages (including Home, Blog, Info/Guides, FAQ, and the Adoption landing page), as well as implementing the navigation bar and footer. I also acted as project manager – handling task division, scheduling, and meetings. My focus was on structure and ensuring that the pages closely followed the visual designs created by our team’s UI designer.</p>
+                  <p>I was responsible for 5 of the 11 pages (including Home, Blog, Info/Guides, FAQ, and the Adoption landing page), as well as implementing the navigation bar and footer. I also acted as project manager – handling task division, scheduling, and meetings. My focus was on structure and ensuring that the pages closely followed the visual designs created by our team's UI designer.</p>
                   <h3>TECH STACK</h3>
                   <p>HTML / CSS / JavaScript, React, Bootstrap, GitHub, Figma, Canva</p>
                 </div>

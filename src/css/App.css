@@ -56,7 +56,7 @@ html {
 
 .nav-pills .nav-link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.5);
+  box-shadow: 0 0 0 3px #6495ed80;
   border-radius: 30px;
 }
 
@@ -244,14 +244,28 @@ legend{
   min-width: 1.5em;
 }
 
+.header-container a,
+.secondary-container a {
+  color: #003366;
+  transition: color 0.15s;
+}
+.header-container a:visited,
+.secondary-container a:visited {
+  color: #3a006e;
+}
+.header-container a:hover,
+.header-container a:focus,
+.secondary-container a:hover,
+.secondary-container a:focus {
+  color: #000000;
+}
+
 @media only screen and (max-width: 374px) {
   .portrait-img {
     width: 100%;
     max-width: 100%;
   }
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .contents {
@@ -276,7 +290,6 @@ legend{
   }
 }
 
-
 @media only screen and (min-width: 768px) {
   .contents {
     margin: 0px 50px !important;
@@ -284,16 +297,12 @@ legend{
   }
 }
 
-
 @media only screen and (min-width: 992px) {
   .contents {
     margin: 0px 100px !important;
     padding: 70px 0px;
   }
 }
-
-@media only screen and (min-width: 600px) and (max-width: 991px) {}
-
 
 @media only screen and (min-width: 1200px) {
   .contents {
