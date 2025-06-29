@@ -29,11 +29,11 @@ html {
 
 .nav-pills .nav-link {
   color: #000000;
-  /* height: 24px;
-  line-height: 20px; */
+  /* height: 24px; */
+  line-height: 20px;
   min-height: 24px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 0.95rem;
   text-align: center;
   display: flex;
@@ -83,7 +83,7 @@ h2 {
 }
 h3{
   padding-bottom: 0px !important;
-  margin-top: 10px !important;
+  margin-top: 16px !important;
   font-size: 20px !important;
   font-weight: 600 !important;
 }
@@ -100,6 +100,11 @@ p {
   padding: 0.9rem 1rem !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
+}
+
+.btn:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
 }
 
 .btn:focus, .btn:focus-visible {

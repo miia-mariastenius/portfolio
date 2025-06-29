@@ -68,11 +68,11 @@ function Projects() {
                 </div>
                 <div className="mt-5 mt-lg-4 col-lg-6 d-flex justify-content-center">
                   <div className="me-3">
-                    <img src={locationproject1} alt="Location App login screen" className="project2-img" />
+                    <img src={locationproject1} alt="Login screen of the location app with input fields for email and password." className="project2-img" />
                   </div>
                   <div className="d-flex flex-column align-items-center gap-3">
-                    <img src={locationproject2} alt="Map view showing a saved location" className="project2-img project2-img2" />
-                    <img src={locationproject3} alt="List of saved locations" className="project2-img project2-img3" />
+                    <img src={locationproject2} alt="Map view centered on Miami with navigation tabs at the bottom for Locations, Add Location, Map, and Capitals." className="project2-img project2-img2" />
+                    <img src={locationproject3} alt="Saved locations list showing Rome and Miami with star ratings, descriptions, and red location icons." className="project2-img project2-img3" />
                   </div>
                 </div>
               </div>

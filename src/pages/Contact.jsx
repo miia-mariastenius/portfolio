@@ -63,153 +63,155 @@ function Contact() {
       <div className="secondary-container">
         <div className="contents">
           <div className="form-padding">
-            <h2>CONTACT FORM</h2>
+            <section aria-labelledby="contact-form">
+              <h2>CONTACT FORM</h2>
 
-            <div >
-              <form onSubmit={handleSubmit} noValidate>
-                <div className="form-group">
-                  <label htmlFor="name">Name <span className="form-required" aria-hidden="true">Required</span></label><br />
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                    placeholder="John Doe"
-                    aria-describedby={errors.name ? "name-error" : undefined}
-                    aria-invalid={!!errors.name} /><br />
-                  {errors.name && (
-                    <span id="name-error" className="error-message" role="alert">
-                      <span aria-hidden="true"><FaExclamationCircle /></span>
-                      {errors.name}
-                    </span>
-                  )}
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email <span className="form-required" aria-hidden="true">Required</span></label><br />
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    placeholder="johndoe@example.com"
-                    aria-describedby={errors.email ? "email-error" : undefined}
-                    aria-invalid={!!errors.email} /><br />
-                  {errors.email && (
-                    <span id="email-error" className="error-message" role="alert">
-                      <span aria-hidden="true"><FaExclamationCircle /></span>
-                      {errors.email}
-                    </span>
-                  )}
-                </div>
-                <div className="form-group">
-                  <label htmlFor="phone">Phone number</label><br />
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    required
-                    placeholder="123 456 7890"
-                    aria-describedby={errors.phone ? "phone-error" : undefined}
-                    aria-invalid={!!errors.phone} /><br />
-                  {errors.phone && (
-                    <span id="phone-error" className="error-message" role="alert">
-                      <span aria-hidden="true"><FaExclamationCircle /></span>
-                      {errors.phone}
-                    </span>
-                  )}
-                </div>
-                <div className="form-group">
-                  <fieldset
-                    aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
-                    aria-invalid={!!errors.contactMethod} className="form-check-group">
-                    <legend>Preferred contact method <span className="form-required" aria-hidden="true">Required</span></legend>
-                    <div>
-                      <input
-                        type="radio"
-                        id="no-preference"
-                        name="contact-method"
-                        value="no-preference"
-                        required
-                        className="form-check-input"
-                        checked={contactMethod === 'no-preference'}
-                        onChange={(e) => setContactMethod(e.target.value)}
-                        aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
-                        aria-invalid={!!errors.contactMethod} />
-                      <label htmlFor="no-preference">No preference</label>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        id="email-contact"
-                        name="contact-method"
-                        value="email"
-                        className="form-check-input"
-                        checked={contactMethod === 'email'}
-                        onChange={(e) => setContactMethod(e.target.value)}
-                        aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
-                        aria-invalid={!!errors.contactMethod} />
-                      <label htmlFor="email-contact">Email</label>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        id="phone-contact"
-                        name="contact-method"
-                        value="phone"
-                        className="form-check-input"
-                        checked={contactMethod === 'phone'}
-                        onChange={(e) => setContactMethod(e.target.value)}
-                        aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
-                        aria-invalid={!!errors.contactMethod} />
-                      <label htmlFor="phone-contact">Phone</label>
-                    </div>
-                    {errors.contactMethod && (
-                      <span id="contact-method-error" className="error-message" role="alert">
+              <div >
+                <form onSubmit={handleSubmit} noValidate>
+                  <div className="form-group">
+                    <label htmlFor="name">Name <span className="form-required" aria-hidden="true">Required</span></label><br />
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                      placeholder="John Doe"
+                      aria-describedby={errors.name ? "name-error" : undefined}
+                      aria-invalid={!!errors.name} /><br />
+                    {errors.name && (
+                      <span id="name-error" className="error-message" role="alert">
                         <span aria-hidden="true"><FaExclamationCircle /></span>
-                        {errors.contactMethod}
+                        {errors.name}
                       </span>
                     )}
-                  </fieldset>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message <span className="form-required" aria-hidden="true">Required</span></label><br />
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    required
-                    placeholder="Your message here..."
-                    aria-describedby={errors.message ? "message-error" : undefined}
-                    aria-invalid={!!errors.message}></textarea><br />
-                  {errors.message && (
-                    <span id="message-error" className="error-message" role="alert">
-                      <span aria-hidden="true"><FaExclamationCircle /></span>
-                      {errors.message}
-                    </span>
-                  )}
-                  {success && (
-                    <div
-                      className="success-message"
-                      role="status"
-                      aria-live="polite"
-                    >
-                      <FaCheckCircle aria-hidden="true" className="success-icon"/>
-                      Your message was sent successfully! Thank you for reaching out. I will get back to you soon.
-                    </div>
-                  )}
-                  <div className="submit-btn">
-                    <button type="submit" className="btn">SEND MESSAGE</button>
                   </div>
-                </div>
-              </form>
-            </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Email <span className="form-required" aria-hidden="true">Required</span></label><br />
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      placeholder="johndoe@example.com"
+                      aria-describedby={errors.email ? "email-error" : undefined}
+                      aria-invalid={!!errors.email} /><br />
+                    {errors.email && (
+                      <span id="email-error" className="error-message" role="alert">
+                        <span aria-hidden="true"><FaExclamationCircle /></span>
+                        {errors.email}
+                      </span>
+                    )}
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="phone">Phone number</label><br />
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      required
+                      placeholder="123 456 7890"
+                      aria-describedby={errors.phone ? "phone-error" : undefined}
+                      aria-invalid={!!errors.phone} /><br />
+                    {errors.phone && (
+                      <span id="phone-error" className="error-message" role="alert">
+                        <span aria-hidden="true"><FaExclamationCircle /></span>
+                        {errors.phone}
+                      </span>
+                    )}
+                  </div>
+                  <div className="form-group">
+                    <fieldset
+                      aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
+                      aria-invalid={!!errors.contactMethod} className="form-check-group">
+                      <legend>Preferred contact method <span className="form-required" aria-hidden="true">Required</span></legend>
+                      <div>
+                        <input
+                          type="radio"
+                          id="no-preference"
+                          name="contact-method"
+                          value="no-preference"
+                          required
+                          className="form-check-input"
+                          checked={contactMethod === 'no-preference'}
+                          onChange={(e) => setContactMethod(e.target.value)}
+                          aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
+                          aria-invalid={!!errors.contactMethod} />
+                        <label htmlFor="no-preference">No preference</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          id="email-contact"
+                          name="contact-method"
+                          value="email"
+                          className="form-check-input"
+                          checked={contactMethod === 'email'}
+                          onChange={(e) => setContactMethod(e.target.value)}
+                          aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
+                          aria-invalid={!!errors.contactMethod} />
+                        <label htmlFor="email-contact">Email</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          id="phone-contact"
+                          name="contact-method"
+                          value="phone"
+                          className="form-check-input"
+                          checked={contactMethod === 'phone'}
+                          onChange={(e) => setContactMethod(e.target.value)}
+                          aria-describedby={errors.contactMethod ? "contact-method-error" : undefined}
+                          aria-invalid={!!errors.contactMethod} />
+                        <label htmlFor="phone-contact">Phone</label>
+                      </div>
+                      {errors.contactMethod && (
+                        <span id="contact-method-error" className="error-message" role="alert">
+                          <span aria-hidden="true"><FaExclamationCircle /></span>
+                          {errors.contactMethod}
+                        </span>
+                      )}
+                    </fieldset>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="message">Message <span className="form-required" aria-hidden="true">Required</span></label><br />
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      required
+                      placeholder="Your message here..."
+                      aria-describedby={errors.message ? "message-error" : undefined}
+                      aria-invalid={!!errors.message}></textarea><br />
+                    {errors.message && (
+                      <span id="message-error" className="error-message" role="alert">
+                        <span aria-hidden="true"><FaExclamationCircle /></span>
+                        {errors.message}
+                      </span>
+                    )}
+                    {success && (
+                      <div
+                        className="success-message"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        <FaCheckCircle aria-hidden="true" className="success-icon" />
+                        Your message was sent successfully! Thank you for reaching out. I will get back to you soon.
+                      </div>
+                    )}
+                    <div className="submit-btn">
+                      <button type="submit" className="btn">SEND MESSAGE</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
           </div>
         </div>
       </div>
