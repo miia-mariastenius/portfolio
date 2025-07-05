@@ -34,7 +34,7 @@ function Projects() {
                   <p>HTML / CSS / JavaScript, React, Bootstrap, GitHub, Figma, Canva</p>
                 </div>
                 <div className="mt-5 mt-lg-4 col-lg-6 d-flex flex-column align-items-center gap-3">
-                  <img src={rescueproject1} alt="Hope Tails Rescue website homepage and About section with image of a dog high-fiving a woman. Group project screenshot." className="project1-img" />
+                  <img src={rescueproject1} alt="Hope Tails Rescue homepage and About section with dog and woman image." className="project1-img" />
                   <img src={rescueproject2} alt="Footer of Hope Tails Rescue project website showing contact details and logo." className="project1-img" />
                 </div>
               </div>
@@ -71,7 +71,7 @@ function Projects() {
                     <img src={locationproject1} alt="Login screen of the location app with input fields for email and password." className="project2-img" />
                   </div>
                   <div className="d-flex flex-column align-items-center gap-3">
-                    <img src={locationproject2} alt="Map view centered on Miami with navigation tabs at the bottom for Locations, Add Location, Map, and Capitals." className="project2-img project2-img2" />
+                    <img src={locationproject2} alt="Map screen showing Miami and bottom navigation bar." className="project2-img project2-img2" />
                     <img src={locationproject3} alt="Saved locations list showing Rome and Miami with star ratings, descriptions, and red location icons." className="project2-img project2-img3" />
                   </div>
                 </div>

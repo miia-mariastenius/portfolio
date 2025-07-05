@@ -60,6 +60,14 @@ html {
   border-radius: 30px;
 }
 
+.nav-multiline {
+  display: inline-block;
+  text-align: center;
+  max-width: 8em;
+  white-space: normal;
+  word-break: break-word;
+}
+
 .header-container {
   background-color: #E4EDF6;
 }

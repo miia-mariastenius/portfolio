@@ -15,7 +15,7 @@ function Navibar() {
         CONTACT
       </Nav.Link>
       <Nav.Link as={NavLink} to="/accessibility-stetament">
-        ACCESSIBILITY<br />STATEMENT
+        <span className="nav-multiline">ACCESSIBILITY STATEMENT</span>
       </Nav.Link>
     </Nav>
   )

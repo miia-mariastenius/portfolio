@@ -64,7 +64,7 @@ function Contact() {
         <div className="contents">
           <div className="form-padding">
             <section aria-labelledby="contact-form">
-              <h2>CONTACT FORM</h2>
+              <h2 id="contact-form">CONTACT FORM</h2>
 
               <div >
                 <form onSubmit={handleSubmit} noValidate>

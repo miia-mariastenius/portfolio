@@ -8,7 +8,7 @@ function AccessibilityStatement() {
             This is an accessibility statement from Miia-Maria Stenius Portfolio.
           </p>
           <section aria-labelledby="conformance-status">
-            <h2 className="mt-3">Conformance status</h2>
+            <h2 id="conformance-status" className="mt-3">Conformance status</h2>
             <p>
               The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. Miia-Maria Stenius Portfolio is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.
             </p>
@@ -18,7 +18,7 @@ function AccessibilityStatement() {
       <div className="secondary-container">
         <div className="contents">
           <section aria-labelledby="feedback">
-            <h2>Feedback</h2>
+            <h2 id="feedback">Feedback</h2>
             <p>
               We welcome your feedback on the accessibility of Miia-Maria Stenius Portfolio.
               Please let us know if you encounter accessibility barriers on Miia-Maria Stenius Portfolio:
@@ -32,7 +32,7 @@ function AccessibilityStatement() {
             </ul>
           </section>
           <section aria-labelledby="date">
-            <h2>Date</h2>
+            <h2 id="date">Date</h2>
             <p>
               This statement was created on 26 June 2025 using the <a href="https://www.w3.org/WAI/planning/statements/">W3C Accessibility Statement Generator Tool</a>.
             </p>
