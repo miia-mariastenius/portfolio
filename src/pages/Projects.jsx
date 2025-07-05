@@ -5,8 +5,14 @@ import rescueproject2 from "../images/HopeTailsRescue2.png"
 import locationproject1 from "../images/LocationApp1.png"
 import locationproject2 from "../images/LocationApp2.jpg"
 import locationproject3 from "../images/LocationApp3.png"
+import { useEffect } from "react"
 
 function Projects() {
+
+  useEffect(() => {
+    document.title = "Miia-Maria Stenius Portfolio - Projects";
+  },[])
+
   return (
     <>
       <div className="header-container">
@@ -17,7 +23,7 @@ function Projects() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="mb-2 d-flex align-items-end gap-2">
-                    <img src={projecticon1} alt="" aria-hidden="true"/>
+                    <img src={projecticon1} alt="" aria-hidden="true" />
                     <h2 id="project1-title">HOPE TAILS RESCUE</h2>
                   </div>
                   <p className="project-description">A responsive web platform built with a team of 3 for pet lovers to browse and adopt rescue animals. Users can view pet profiles, read stories, and contact the shelter directly.</p>

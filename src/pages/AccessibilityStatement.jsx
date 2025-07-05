@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 function AccessibilityStatement() {
+
+    useEffect(() => {
+      document.title = "Miia-Maria Stenius Portfolio - Accessibility Statement";
+    },[])
+
   return (
     <>
       <div className="header-container">

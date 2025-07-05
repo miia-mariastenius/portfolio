@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaExclamationCircle, FaCheckCircle } from "react-icons/fa";
 
 function Contact() {
+
+  useEffect(() => {
+    document.title = "Miia-Maria Stenius Portfolio - Contact";
+  }, [])
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');

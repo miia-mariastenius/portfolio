@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import portrait from "../images/20230920_105540.jpg"
 import { FaCode, FaFigma, FaGlobe } from 'react-icons/fa';
+import { useEffect } from "react";
 
 function Home() {
+
+    useEffect(() => {
+      document.title = "Miia-Maria Stenius Portfolio";
+    },[])
+
   return (
     <>
       <div className="header-container">
