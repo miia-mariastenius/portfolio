@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function AccessibilityStatement() {
 
@@ -35,7 +36,9 @@ function AccessibilityStatement() {
                 E-mail:&nbsp;
                 <a className="email u-email" href="mailto:n3stmi00@students.oamk.fin3stmi00@students.oamk.fi">n3stmi00@students.oamk.fi</a>
               </li>
-              <li className="contact-other p-note">On the contact page</li>
+              <li className="contact-other p-note">On the&nbsp;
+                <Link to="/contact">contact page</Link>
+              </li>
             </ul>
           </section>
           <section aria-labelledby="date">
