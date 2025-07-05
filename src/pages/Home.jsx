@@ -5,9 +5,9 @@ import { useEffect } from "react";
 
 function Home() {
 
-    useEffect(() => {
-      document.title = "Miia-Maria Stenius Portfolio";
-    },[])
+  useEffect(() => {
+    document.title = "Miia-Maria Stenius Portfolio";
+  }, [])
 
   return (
     <>

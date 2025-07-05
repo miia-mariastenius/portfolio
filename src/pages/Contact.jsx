@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaExclamationCircle, FaCheckCircle } from "react-icons/fa";
 
 function Contact() {
@@ -56,6 +56,14 @@ function Contact() {
       setSuccess(false);
     }
   }
+
+  const successRef = useRef(null);
+
+  useEffect(() => {
+    if (success && successRef.current) {
+      successRef.current.focus();
+    }
+  }, [success]);
 
   return (
     <>
@@ -200,12 +208,15 @@ function Contact() {
                         {errors.message}
                       </span>
                     )}
+                    <div
+                      aria-live="polite"
+                      role="status"
+                      className="sr-live"
+                    >
+                      {success && "Your message was sent successfully! Thank you for reaching out. I will get back to you soon."}
+                    </div>
                     {success && (
-                      <div
-                        className="success-message"
-                        role="status"
-                        aria-live="polite"
-                      >
+                      <div className="success-message" aria-hidden="true">
                         <FaCheckCircle aria-hidden="true" className="success-icon" />
                         Your message was sent successfully! Thank you for reaching out. I will get back to you soon.
                       </div>

@@ -2,9 +2,9 @@ import { useEffect } from "react";
 
 function AccessibilityStatement() {
 
-    useEffect(() => {
-      document.title = "Miia-Maria Stenius Portfolio - Accessibility Statement";
-    },[])
+  useEffect(() => {
+    document.title = "Miia-Maria Stenius Portfolio - Accessibility Statement";
+  }, [])
 
   return (
     <>
