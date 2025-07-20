@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/accessibility-stetament" element={<AccessibilityStatement />} />
+          <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
         </Routes>
       </main>
       <footer className="footer">

@@ -14,7 +14,7 @@ function Navibar() {
       <Nav.Link as={NavLink} to="/contact">
         CONTACT
       </Nav.Link>
-      <Nav.Link as={NavLink} to="/accessibility-stetament">
+      <Nav.Link as={NavLink} to="/accessibility-statement">
         <span className="nav-multiline">ACCESSIBILITY STATEMENT</span>
       </Nav.Link>
     </Nav>
